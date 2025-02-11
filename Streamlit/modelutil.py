@@ -29,6 +29,6 @@ def load_model() -> Sequential:
 
     model.add(Dense(41, kernel_initializer="he_normal", activation="softmax"))
 
-    model.load_weights("../Streamlit/Checkpoints/checkpoint")
+    model.load_weights("../checkpoints/checkpoint")
 
     return model
